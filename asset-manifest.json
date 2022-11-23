@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/bingo-card-generator/static/css/main.bc4f473f.css",
+    "main.js": "/bingo-card-generator/static/js/main.a8ddacd4.js",
+    "index.html": "/bingo-card-generator/index.html",
+    "main.bc4f473f.css.map": "/bingo-card-generator/static/css/main.bc4f473f.css.map",
+    "main.a8ddacd4.js.map": "/bingo-card-generator/static/js/main.a8ddacd4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc4f473f.css",
+    "static/js/main.a8ddacd4.js"
+  ]
+}
