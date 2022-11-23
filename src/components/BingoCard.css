@@ -1,0 +1,81 @@
+.bingo-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	max-width: 500px;
+	padding: 32px 24px;
+	margin: 24px 0;
+	background-color: #ffffff;
+	box-shadow: 6px 6px 26px rgba(0, 0, 0, 0.2);
+}
+
+.bingo-card.is-print-only {
+	display: none;
+}
+
+.bingo-card__grid {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	width: 100%;
+	border: 1px solid #000000;
+}
+
+.bingo-card__grid--header {
+	border-bottom: none;
+}
+
+.bingo-card__grid--numbers {
+	grid-template-rows: repeat(5, 1fr);
+	grid-auto-flow: column;
+}
+
+.bingo-card__square {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	aspect-ratio: 1;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.bingo-card__grid--numbers .bingo-card__square {
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+}
+
+.bingo-card__grid--numbers .bingo-card__square:nth-child(n + 21) {
+	border-right: none;
+}
+
+.bingo-card__grid--numbers .bingo-card__square:nth-child(5n) {
+	border-bottom: none;
+}
+
+@media screen and (min-width: 548px) {
+	.bingo-card {
+		padding: 48px 32px;
+	}
+
+	.bingo-card__square {
+		font-size: 36px;
+	}
+}
+
+@media print {
+	.bingo-card {
+		display: flex !important;
+		width: calc(50% - 3px);
+		max-width: calc(50% - 3px);
+		aspect-ratio: 25 / 31;
+		padding: 48px 32px;
+		margin: 0;
+		box-shadow: none;
+		border: 1px solid #000000;
+	}
+
+	.bingo-card__square {
+		font-size: 36px;
+	}
+}

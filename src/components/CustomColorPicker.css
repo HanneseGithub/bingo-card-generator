@@ -1,0 +1,50 @@
+.colorpicker__trigger {
+	border: none;
+	margin: 0;
+	padding: 0;
+	width: auto;
+	overflow: visible;
+	background: transparent;
+	-webkit-font-smoothing: inherit;
+	-moz-osx-font-smoothing: inherit;
+	-webkit-appearance: none;
+	cursor: pointer;
+}
+
+.colorpicker__trigger-inner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.colorpicker__trigger-color {
+	width: 24px;
+	height: 24px;
+	border-radius: 4px;
+	background: #ffffff;
+	transition: box-shadow 150ms ease-in-out;
+}
+
+.colorpicker__trigger:hover .colorpicker__trigger-color {
+	box-shadow: rgb(255 0 0 / 90%) 0px 3px, rgb(0 255 0 / 70%) 0px 6px,
+		rgb(0 0 255 / 50%) 0px 9px;
+}
+
+.colorpicker__trigger-text {
+	margin-left: 8px;
+	font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+	font-size: 16px;
+}
+
+.colorpicker__popup {
+	position: absolute;
+	z-index: 2;
+}
+
+.colorpicker__cover {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}

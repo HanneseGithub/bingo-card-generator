@@ -1,0 +1,30 @@
+.header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 32px;
+	text-align: center;
+}
+
+.header__title {
+	font-size: 48px;
+	text-transform: uppercase;
+}
+
+.header__description {
+	margin-top: 24px;
+	font-size: 24px;
+	font-weight: 300;
+}
+
+@media screen and (min-width: 1024px) {
+	.header {
+		padding-bottom: 64px;
+	}
+}
+
+@media print {
+	.header {
+		display: none;
+	}
+}

@@ -1,0 +1,26 @@
+.app-container {
+	width: 100%;
+	max-width: 796px;
+	margin: 0 auto;
+	padding: 48px 24px;
+}
+
+@media screen and (min-width: 680px) {
+	.app-container {
+		padding: 48px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.app-container {
+		padding: 100px 48px;
+	}
+}
+
+@media print {
+	.app-container {
+		max-width: none;
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+}

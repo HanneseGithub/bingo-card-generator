@@ -1,0 +1,28 @@
+.upload__input {
+	max-width: 250px;
+	font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	cursor: pointer;
+}
+
+.upload__input::file-selector-button {
+	margin: 0 12px 0 0;
+	padding: 8px 16px;
+	border: none;
+	border-radius: 4px;
+	background: #000000;
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 1.2;
+	cursor: pointer;
+	transition: background 150ms ease-in;
+}
+
+.upload__input:hover::file-selector-button {
+	background: #121212;
+}
+
+.upload__input:active::file-selector-button {
+	background: #292929;
+}
